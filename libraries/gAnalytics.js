@@ -16,9 +16,9 @@ const jwt = new google.auth.JWT({
 });
 
 async function getMetric(metric, startDate, endDate, filter) {
-  await setTimeout[Object.getOwnPropertySymbols(setTimeout)[0]](
-    Math.trunc(1000 * Math.random())
-  );
+  // await setTimeout[Object.getOwnPropertySymbols(setTimeout)[0]](
+  //   Math.trunc(1000 * Math.random())
+  // );
 
   const result = await analytics.data.ga.get({
     auth: jwt,
@@ -52,10 +52,6 @@ function getData(
   endDate = 'today',
   filters
 ) {
-  console.log('filters', filters);
-
-  //const gaFilters = [`ga:eventCategory==Post;ga:eventAction==${filters}`;
-  console.log('filters', filters);
   const gaFilters = [`ga:eventCategory==Post;ga:eventAction==${filters}`];
 
   const results = [];
@@ -71,5 +67,3 @@ function getData(
 module.exports = {
   getData,
 };
-
-//https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A223091788&start-date=30daysAgo&end-date=yesterday&metrics=ga%3AtotalEvents&filters=ga%3AeventCategory%3D%3DPost%3Bga%3AeventAction%3D%3DClapped%20%2FPosts%2Frapid-Prototyping-With-Code&access_token=ya29.a0AfH6SMCQ4AxGd-yP-UHE9wvyXHeUn5WnCdVp9ZaGiNKyXDyTFmt4aYPAJaDp2mgVd57tu1_A6PSYZNi-LAPtqk_WT1dgECXh8vJSZ-I1ZDTeTgRTcO9Z3PBdsw_DO2tDK0gs2DeOuMeyJdV7YX291x4J5Sk6pj_Y9PZe
