@@ -13,10 +13,10 @@ const server = require('http').createServer(app);
 const { getData } = require('./libraries/gAnalytics');
 
 // Config
-const port = process.env.SERVER_PORT;
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
-}
+const port = process.env.PORT || 3001;
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'));
+// }
 
 app.get('/api', (req, res) => {
   console.log('req.query', req.query);
