@@ -1,6 +1,7 @@
 // Config
 const clientEmail = process.env.CLIENT_EMAIL;
-const privateKey = process.env.PRIVATE_KEY.replace(new RegExp('\\\\n'), '\n');
+//const privateKey = process.env.PRIVATE_KEY.replace(new RegExp('\\\\n'), '\n');
+const privateKey = process.env.PRIVATE_KEY.replace(/\\n/g, '\n');
 const scopes = ['https://www.googleapis.com/auth/analytics.readonly'];
 
 // API's
