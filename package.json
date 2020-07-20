@@ -1,5 +1,5 @@
 {
-  "name": "analytics-dashboard",
+  "name": "clap-button",
   "version": "0.1.0",
   "description": "Node.js application to serve appreciation data from Google Analytics",
   "main": "server.js",
