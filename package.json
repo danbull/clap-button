@@ -2,11 +2,11 @@
   "name": "clap-button",
   "version": "0.1.0",
   "description": "Node.js application to serve appreciation data from Google Analytics",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server",
-    "server": "node server.js"
+    "server": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -14,18 +14,13 @@
   },
   "author": "Daniel Bull",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-flowtype": "^4.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3"
-  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "googleapis": "^55.0.0"
+    "googleapis": "^59.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1"
   }
 }
